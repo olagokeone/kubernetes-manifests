@@ -12,7 +12,7 @@ spec:
     - ReadWriteMany
   nfs:
     server: <nfs server ip>
-    path: "/mnt/share"
+    path: "/mnt/share"    #mountpoint can be different
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
