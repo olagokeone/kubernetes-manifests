@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springappdeployment
+  name: springapp
 spec:
   replicas: 2
   selector:
@@ -10,12 +10,12 @@ spec:
       app: springapp
   template:
     metadata:
-      name: springapppod
+      name: springapp
       labels:
         app: springapp
     spec:
       containers:
-      - name: springappcontainer
+      - name: springapp
         image: mylandmarktech/spring-boot-mongo
         ports:
         - containerPort: 8080
